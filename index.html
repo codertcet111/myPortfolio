@@ -8,6 +8,14 @@
 </head>
 <body>
 <!-- partial:index.partial.html -->
+<section id="parallax">
+  <img src="images/bg.jpg" id="bg">
+  <img src="images/moon.png" id="moon">
+  <img src="images/mountain.png" id="mountain">
+  <img src="images/road.png" id="road">
+  <h2 id="text">My Journey</h2>
+</section>
+<div class="break"></div>
 <div class="ag-timeline-block">
   <div class="ag-timeline_title-box">
     <div class="ag-timeline_tagline">Timeline</div>
@@ -414,4 +422,21 @@
   <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.1/jquery.min.js'></script><script  src="./script.js"></script>
 
 </body>
+
+<script type="text/javascript">
+  let bg = document.getElementById('bg');
+  let moon = document.getElementById('moon');
+  let mountain = document.getElementById('mountain');
+  let road = document.getElementById('road');
+  let text = document.getElementById('text');
+
+  window.addEventListener('scroll', function(){
+    var value = window.scrollY;
+    bg.style.top = value * 0.5 + 'px';
+    moon.style.left = -value * 0.5 + 'px';
+    mountain.style.top = -value * 0.15 + 'px';
+    road.style.top = value * 0.15 + 'px';
+    text.style.top = value * 1.0 + 'px';
+  })
+</script>
 </html>
