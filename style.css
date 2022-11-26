@@ -311,9 +311,20 @@ img {
 }
 .ag-timeline-card_desc {
   line-height: 1.45;
-
+  text-align: left;
   font-size: 16px;
   color: #FFF;
+}
+
+#sm-footer {
+  bottom: 0; 
+  /* background-color: rgb(253, 251, 251);  */
+  width: 100vw; 
+  height: 15vh; 
+  display: flex;
+  justify-content: space-evenly;
+  font-size: 2rem; 
+  font-family: 'Roboto Slab', sans-serif; 
 }
 
 
