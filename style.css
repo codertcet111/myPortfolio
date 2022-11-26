@@ -1,7 +1,7 @@
 
 
 body {
-  background-color: #000;
+  background-color: rgb(37, 34, 78);
 
   overflow-x: hidden;
 }
@@ -40,10 +40,10 @@ body {
   font-weight: bold;
 }
 
-section #parallax{
+section {
+  height: 100vh;
   position: relative;
   width: 100%;
-  height: 100vh;
   overflow: hidden;
   display: flex;
   justify-content: center;
@@ -67,7 +67,7 @@ section #parallax{
   left: 0;
   width: 100%;
   height: 100%;
-  background: #0a2a43;
+  /* background: #0a2a43; */
   z-index: 10000;
   mix-blend-mode: color;
 }
@@ -117,7 +117,7 @@ img {
   text-align: center;
 }
 .ag-timeline_tagline {
-  font-size: 40px;
+  font-size: 20px;
   color: rgb(84, 89, 95);
 }
 .ag-timeline_title {
@@ -131,7 +131,7 @@ img {
   text-fill-color: transparent;
   color: transparent;
 
-  font-size: 80px;
+  font-size: 60px;
 }
 
 .ag-timeline_item {
